@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "MVP",
-    "slug": "MVP",
+    "name": "klpmvp",
+    "slug": "klpmvp",
     "version": "1.0.0",
+    "scheme": "klpmvp",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -13,12 +14,19 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.klpmvp.test",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.klpmvp.test",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#1A1A1A"
       },
       "edgeToEdgeEnabled": true
     },
@@ -27,6 +35,12 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a0d49fdd-0aeb-4ba3-a8a9-d564c0be4ac6"
+      }
+    }
   }
 }
